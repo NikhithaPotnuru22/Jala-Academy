@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JALA Academy Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-me input {
+            margin-right: 10px;
+        }
+
+        .sign-in-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .sign-in-btn:hover {
+            background-color: #45a049;
+        }
+
+        .or {
+            text-align: center;
+            margin: 20px 0 10px;
+            color: #666;
+        }
+
+        .forgot-password {
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .admin-login {
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+
+        .admin-login:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JALA Academy</h1>
+        <p>Use the below details to login</p>
+        <p>Email: training@jalaacademy.com</p>
+        <p>Password: jobprogram</p>
+        <p class="highlight">Learn everything on Real-Time Scenarios. FREE for all.</p>
+
+        <form>
+            <label for="email-mobile">Email or Mobile No</label>
+            <input type="text" id="email-mobile" name="email-mobile" placeholder="Enter your email or mobile number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <div class="form-group">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </div>
+        </form>
+
+        <p class="or">- OR -</p>
+
+        <a href="#" class="forgot-password">Forgot Password</a>
+
+        <a href="#" class="admin-login">Admin Login</a>
+    </div>
+</body>
+</html>
